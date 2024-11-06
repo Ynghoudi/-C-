@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int seconds;
+    int hours, minutes, remainingSeconds;
+
+    cout << "Введите количество секунд: ";
+    cin >> seconds;
+
+    hours = seconds / 3600;
+    minutes = (seconds % 3600) / 60;
+    remainingSeconds = (seconds % 3600) % 60;
+
+    cout << "Время: " << hours << " часов, " << minutes << " минут, " << remainingSeconds << " секунд" << endl;
+
+    return 0;
+}
